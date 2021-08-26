@@ -1,6 +1,14 @@
 {
   "name": "liquid-vue-tailwind",
   "version": "0.0.0",
+  "description": "This small sandbox app demonstrates Liquid Oxygen used in combination with Vue 3, Typescript, Tailwind CSS and Vite.",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:emdgroup-liquid/liquid-sandbox-vue-tailwind.git"
+  },
+  "author": "User Experience Strategy & Design unit, part of the Chief Digital Organization at EMD Group <liquid@emdgroup.com> (https://github.com/emdgroup-liquid)",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "dev:force": "vite --force",
