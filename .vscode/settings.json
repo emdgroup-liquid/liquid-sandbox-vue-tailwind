@@ -1,0 +1,6 @@
+{
+  "html.customData": [
+    "./node_modules/@emdgroup-liquid/liquid/dist/web-components.html-data.json"
+  ],
+  "volar.tsPlugin": true
+}
