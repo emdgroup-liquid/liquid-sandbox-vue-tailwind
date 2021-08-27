@@ -1,5 +1,5 @@
 {
-  "name": "liquid-vue-tailwind",
+  "name": "liquid-sandbox-vue-tailwind",
   "version": "0.0.0",
   "description": "This small sandbox app demonstrates Liquid Oxygen used in combination with Vue 3, Typescript, Tailwind CSS and Vite.",
   "private": false,
