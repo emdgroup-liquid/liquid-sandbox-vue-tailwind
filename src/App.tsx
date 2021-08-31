@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import Form from './components/Form'
+import Form from './components/Form/Form'
 import { ThemeName } from '@emdgroup-liquid/liquid/dist/types/components/ld-theme/ld-theme'
 
 export default defineComponent({
@@ -32,15 +32,7 @@ export default defineComponent({
     onChangeTheme(theme: ThemeName) {
       this.currentTheme = theme
       setTimeout(() => {
-        dispatchEvent(
-          new CustomEvent('ldNotificationClear', {
-            detail: {
-              content: this.successMessages[0],
-              type: 'info',
-              timeout: 2000,
-            },
-          })
-        )
+        dispatchEvent(new CustomEvent('ldNotificationClear'))
         dispatchEvent(
           new CustomEvent('ldNotificationAdd', {
             detail: {

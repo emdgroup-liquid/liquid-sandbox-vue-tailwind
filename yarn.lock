@@ -268,12 +268,12 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@emdgroup-liquid/liquid@1.0.0-rc.5":
-  version "1.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/@emdgroup-liquid/liquid/-/liquid-1.0.0-rc.5.tgz#f6ce7aabde4300aa68fdf7563aea1f1b528cab61"
-  integrity sha512-uOwIioc7e6/tH9l9b6ZcBy1wpBHklHEG5Jck+78ySaa5iZ7D8U3/A+zXKN9luRyRbGiKr4uLBx+m6h7hUgpmYA==
+"@emdgroup-liquid/liquid@1.0.0-rc.6":
+  version "1.0.0-rc.6"
+  resolved "https://registry.yarnpkg.com/@emdgroup-liquid/liquid/-/liquid-1.0.0-rc.6.tgz#b2a37d80f89fc6a8ade626f39dd347954991bbbe"
+  integrity sha512-L6VGZ7ZFgR4Vof5VtW2MyJLOUyOt49HP7TeiAyxteKt/YBI/7JC890E7rbKx7wjEGvQK8gHqcS5CqwaQA+mc2Q==
   dependencies:
-    "@stencil/core" "^2.5.1"
+    "@stencil/core" "^2.7.1"
     tether "^2.0.0"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -305,7 +305,7 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@stencil/core@^2.5.1":
+"@stencil/core@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.7.1.tgz#1bffff72dbe762d27b477da4ea06c647e84472fa"
   integrity sha512-kpeqCyfoWyqyiqn32xQGx5bpVwH1UtcZEpYPx42MpoxHZNlpmjV+852/PGFFWsMTqrLiP8Z1NU5rT7yXUCsG6Q==
@@ -454,6 +454,20 @@
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.11.tgz#20d22dd0da7d358bb21c17f9bde8628152642c77"
   integrity sha512-b+zB8A2so8eCE0JsxjL24J7vdGl8rzPQ09hZNhystm+KqSbKcAej1A+Hbva1rCMmTTqA+hFnUSDc5kouEo0JzA==
+
+"@vuelidate/core@^2.0.0-alpha.24":
+  version "2.0.0-alpha.24"
+  resolved "https://registry.yarnpkg.com/@vuelidate/core/-/core-2.0.0-alpha.24.tgz#47e48a9cf8061f3c0ac0663c7c1c925ed0eec1b1"
+  integrity sha512-WwAVpxAUMT7DFFTYNaieGBgz3az8mtV8v/waHJPcBGx/q4g3m6cxe1GONC/L/695XrETO8vJRXLkiqCPXrfIQQ==
+  dependencies:
+    vue-demi "^0.11.3"
+
+"@vuelidate/validators@^2.0.0-alpha.21":
+  version "2.0.0-alpha.21"
+  resolved "https://registry.yarnpkg.com/@vuelidate/validators/-/validators-2.0.0-alpha.21.tgz#bc1e92865aa9ce213b4ba0acc26fd78bf27dd4ac"
+  integrity sha512-Ch+dW2hSWxAv+DcCEbpMVB58rylrCRxrGQMvL1gJKtq2SdrIrvw+IfgGL9VtxLx8U8gqlDiqy7M4Ycu59rUSnA==
+  dependencies:
+    vue-demi "^0.11.3"
 
 acorn-node@^1.6.1:
   version "1.8.2"
@@ -1796,6 +1810,11 @@ vite@^2.2.3:
     rollup "^2.38.5"
   optionalDependencies:
     fsevents "~2.3.1"
+
+vue-demi@^0.11.3:
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.11.3.tgz#dd7495b92b495ecfa35675bf024b1358a7add150"
+  integrity sha512-DpM0TTMpclRZDV6AIacgg837zrim/C9Zn+2ztXBs9hsESJN9vC83ztjTe4KC4HgJuVle8YUjPp7HTwWtwOHfmg==
 
 vue-tsc@^0.0.24:
   version "0.0.24"
