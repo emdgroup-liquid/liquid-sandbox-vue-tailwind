@@ -9,21 +9,21 @@ export default defineConfig({
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: tag => tag.startsWith('ld-')
+          isCustomElement: (tag) => tag.startsWith('ld-'),
         },
       },
     }),
     vueJsx({
-      isCustomElement: tag => tag.startsWith('ld-')
+      isCustomElement: (tag) => tag.startsWith('ld-'),
     }),
     copy({
       targets: [
         {
-          src: "node_modules/@emdgroup-liquid/liquid/dist/liquid/assets/*",
-          dest: "public/assets"
-        }
+          src: 'node_modules/@emdgroup-liquid/liquid/dist/liquid/assets/*',
+          dest: 'public/assets',
+        },
       ],
-      hook: "buildStart"
-    })
-  ]
+      hook: 'buildStart',
+    }),
+  ],
 })
