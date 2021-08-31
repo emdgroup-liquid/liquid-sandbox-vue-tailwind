@@ -1,4 +1,4 @@
-import { defineComponent, PropType, SetupContext } from 'vue'
+import { defineComponent, PropType } from 'vue'
 import { ThemeName } from '@emdgroup-liquid/liquid/dist/types/components/ld-theme/ld-theme'
 import useVuelidate from '@vuelidate/core'
 import { email, helpers, required, url } from '@vuelidate/validators'
