@@ -24,6 +24,7 @@ export default defineComponent({
       title: '',
       email: '',
       website: '',
+      termsAccepted: false,
     }
   },
   validations() {
@@ -40,6 +41,9 @@ export default defineComponent({
       },
       website: {
         url: helpers.withMessage('This URL is invalid.', url),
+      },
+      termsAccepted: {
+        checked: (value: boolean) => value == true,
       },
     }
   },
@@ -274,8 +278,24 @@ export default defineComponent({
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-ld-24 items-center">
           <ld-label position="right" size="m">
-            <span>I accept the terms (none).</span>
-            <ld-checkbox tone="dark"></ld-checkbox>
+            <span
+              class={{
+                'text-rr': !this.termsAccepted && this.v$.termsAccepted.$dirty,
+              }}
+            >
+              I accept the terms (none).
+            </span>
+            <ld-checkbox
+              tone="dark"
+              checked={this.termsAccepted}
+              onInput={() => {
+                this.termsAccepted = !this.termsAccepted
+              }}
+              onBlur={(ev: Event) => {
+                this.v$.termsAccepted.$touch()
+              }}
+              invalid={this.v$.termsAccepted.$error}
+            ></ld-checkbox>
           </ld-label>
 
           <div class="grid grid-cols-2 gap-ld-16">
