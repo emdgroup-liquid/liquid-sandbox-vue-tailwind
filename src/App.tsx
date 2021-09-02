@@ -1,11 +1,13 @@
 import { defineComponent } from 'vue'
 import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
 import { ThemeName } from '@emdgroup-liquid/liquid/dist/types/components/ld-theme/ld-theme'
 
 export default defineComponent({
   name: 'App',
   components: {
     Form,
+    Footer,
   },
   data() {
     return {
@@ -56,7 +58,7 @@ export default defineComponent({
         class="flex flex-col min-h-screen"
       >
         <ld-notification placement="bottom"></ld-notification>
-        <div class="relative flex items-center" style="min-height: 80vh">
+        <main class="relative flex items-center" style="min-height: 80vh">
           <ld-bg-cells class="block absolute inset-0"></ld-bg-cells>
           <div class="container mx-auto px-ld-24 pt-ld-40 pb-24 relative max-w-2xl">
             <ld-heading level="1" visual-level="b1" class="text-vy mb-ld-40">
@@ -64,11 +66,8 @@ export default defineComponent({
             </ld-heading>
             <Form onChangeTheme={this.onChangeTheme} />
           </div>
-        </div>
-        <div
-          class="relative flex-grow"
-          style="background: var(--ld-thm-bg-secondary); min-height: 12rem"
-        ></div>
+        </main>
+        <Footer />
       </ld-theme>
     )
   },
