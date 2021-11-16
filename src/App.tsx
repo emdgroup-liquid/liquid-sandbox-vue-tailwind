@@ -1,7 +1,6 @@
 import { defineComponent } from 'vue'
 import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
-import { ThemeName } from '@emdgroup-liquid/liquid/dist/types/components/ld-theme/ld-theme'
 
 export default defineComponent({
   name: 'App',
@@ -31,7 +30,7 @@ export default defineComponent({
     }
   },
   methods: {
-    onChangeTheme(theme: ThemeName) {
+    onChangeTheme(theme: string) {
       this.currentTheme = theme
       setTimeout(() => {
         dispatchEvent(new CustomEvent('ldNotificationClear'))
@@ -53,22 +52,19 @@ export default defineComponent({
   },
   render() {
     return (
-      <ld-theme
-        name={this.currentTheme as ThemeName}
-        class="flex flex-col min-h-screen"
-      >
+      <div class={`flex flex-col min-h-screen ld-theme-${this.currentTheme}`}>
         <ld-notification placement="bottom"></ld-notification>
         <main class="relative flex items-center" style="min-height: 80vh">
           <ld-bg-cells class="block absolute inset-0"></ld-bg-cells>
           <div class="container mx-auto px-ld-24 pt-ld-40 pb-24 relative max-w-2xl">
-            <ld-heading level="1" visual-level="b1" class="text-vy mb-ld-40">
+            <ld-typo variant="b1" visual-level="b1" class="text-vy mb-ld-40">
               Liquid Sandbox App
-            </ld-heading>
+            </ld-typo>
             <Form onChangeTheme={this.onChangeTheme} />
           </div>
         </main>
         <Footer />
-      </ld-theme>
+      </div>
     )
   },
 })

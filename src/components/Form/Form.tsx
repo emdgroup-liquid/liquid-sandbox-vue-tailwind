@@ -1,5 +1,4 @@
 import { defineComponent, PropType } from 'vue'
-import { ThemeName } from '@emdgroup-liquid/liquid/dist/types/components/ld-theme/ld-theme'
 import useVuelidate from '@vuelidate/core'
 import { email, helpers, required, url } from '@vuelidate/validators'
 import { titles } from './titles'
@@ -10,10 +9,10 @@ export default defineComponent({
     return { v$: useVuelidate() }
   },
   props: {
-    onChangeTheme: Function as PropType<(theme: ThemeName) => void>,
+    onChangeTheme: Function as PropType<(theme: string) => void>,
   },
   emits: {
-    changeTheme(payload: ThemeName) {
+    changeTheme(payload: string) {
       return payload
     },
   },
@@ -48,7 +47,7 @@ export default defineComponent({
     }
   },
   methods: {
-    onThemeChange(theme: ThemeName) {
+    onThemeChange(theme: string) {
       this.$emit('changeTheme', theme)
     },
     onCancel() {
@@ -80,11 +79,13 @@ export default defineComponent({
           new CustomEvent('ldNotificationAdd', {
             detail: {
               content: `
-                <span class="block">Thanks! We hope you like this sandbox. 🤗<span>
-                <span class="block">
-                  <a class='font-bold hover:underline' href='https://github.com/emdgroup-liquid/liquid/discussions' target='_blank'>Reach out</a> 
-                  if you have any questions!
-                </span>`,
+                <div>
+                  <div>Thanks! We hope you like this sandbox. 🤗</div>
+                  <div>
+                    <a class='font-bold hover:underline' style="color: inherit" href='https://github.com/emdgroup-liquid/liquid/discussions' target='_blank'><b>Reach out</b></a> 
+                    if you have any questions!
+                  </div>
+                </div>`,
               type: 'info',
               timeout: 0,
             },
@@ -95,12 +96,12 @@ export default defineComponent({
   },
   render() {
     return (
-      <div class="bg-wht rounded-l shadow-hover p-ld-32">
-        <ld-heading level="2" class="mb-ld-32">
+      <div class="bg-wht rounded-l shadow-hover p-ld-32 block">
+        <ld-typo variant="h2" class="mb-ld-32">
           Hi there 👋
-        </ld-heading>
+        </ld-typo>
 
-        <ld-paragraph class="mb-ld-16">
+        <ld-typo class="mb-ld-16">
           This small sandbox app demonstrates{' '}
           <a
             href="https://emdgroup-liquid.github.io/liquid/"
@@ -109,10 +110,10 @@ export default defineComponent({
             Liquid Oxygen
           </a>{' '}
           used in combination with Vue 3, Typescript, Tailwind CSS and Vite.
-        </ld-paragraph>
-        <ld-paragraph class="mb-ld-24">
+        </ld-typo>
+        <ld-typo class="mb-ld-24">
           Let's change the theme of the app first:
-        </ld-paragraph>
+        </ld-typo>
 
         <ld-label class="mb-ld-32 w-full">
           App Theme
@@ -133,18 +134,18 @@ export default defineComponent({
           </ld-select>
         </ld-label>
 
-        <ld-paragraph class="mb-ld-24">
+        <ld-typo class="mb-ld-24">
           Next we have set up some form validation:
-        </ld-paragraph>
+        </ld-typo>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-ld-24 mb-ld-32">
           <ld-label>
             <span class="flex justify-between">
               Your title (optional)
               <ld-tooltip arrow position="top right" class="h-1">
-                <ld-paragraph>
+                <ld-typo>
                   We are asking because we'd like to address you correctly.
-                </ld-paragraph>
+                </ld-typo>
               </ld-tooltip>
             </span>
             <ld-select
