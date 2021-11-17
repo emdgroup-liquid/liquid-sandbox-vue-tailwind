@@ -57,7 +57,7 @@ export default defineComponent({
         <main class="relative flex items-center" style="min-height: 80vh">
           <ld-bg-cells class="block absolute inset-0"></ld-bg-cells>
           <div class="container mx-auto px-ld-24 pt-ld-40 pb-24 relative max-w-2xl">
-            <ld-typo variant="b1" visual-level="b1" class="text-vy mb-ld-40">
+            <ld-typo variant="b1" class="text-vy mb-ld-40">
               Liquid Sandbox App
             </ld-typo>
             <Form onChangeTheme={this.onChangeTheme} />
