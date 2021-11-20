@@ -377,10 +377,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@emdgroup-liquid/liquid@1.0.0-rc.14":
-  version "1.0.0-rc.14"
-  resolved "https://registry.yarnpkg.com/@emdgroup-liquid/liquid/-/liquid-1.0.0-rc.14.tgz#b6040dd8a39a781d1866eef70b144383c198666f"
-  integrity sha512-mE/3XHVrmqhG77ig5Rb1dgO7Ap85xF8NNBnWBFgwt8ZDgeINI92KWY94laKW4P4IkY2znT81U2Q98jkxTicwng==
+"@emdgroup-liquid/liquid@1.0.0-rc.16":
+  version "1.0.0-rc.16"
+  resolved "https://registry.yarnpkg.com/@emdgroup-liquid/liquid/-/liquid-1.0.0-rc.16.tgz#c66ec556c746cdee25cf67ca26a663ece758a018"
+  integrity sha512-MkLTN7ZOmUFRPodpDUFgp+jeyFyF+J9eNUXun0OxaIEyhvtxhDDGdHQ4xi8GUtfxwyVGbET/SgHtz1ca9tIM4A==
   dependencies:
     "@stencil/core" "^2.7.1"
     tether "^2.0.0"
