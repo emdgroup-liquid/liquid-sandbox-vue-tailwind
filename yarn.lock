@@ -377,12 +377,12 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@emdgroup-liquid/liquid@1.0.0-rc.16":
-  version "1.0.0-rc.16"
-  resolved "https://registry.yarnpkg.com/@emdgroup-liquid/liquid/-/liquid-1.0.0-rc.16.tgz#c66ec556c746cdee25cf67ca26a663ece758a018"
-  integrity sha512-MkLTN7ZOmUFRPodpDUFgp+jeyFyF+J9eNUXun0OxaIEyhvtxhDDGdHQ4xi8GUtfxwyVGbET/SgHtz1ca9tIM4A==
+"@emdgroup-liquid/liquid@1.0.0-rc.23":
+  version "1.0.0-rc.23"
+  resolved "https://registry.yarnpkg.com/@emdgroup-liquid/liquid/-/liquid-1.0.0-rc.23.tgz#c6e0fd5cb726622d81c450e2a6448da1af5cbeec"
+  integrity sha512-QwedvU9jUi1M6j0fwRDDsI7HvwAUUyJH40tirU4c9KZv13fmi09jiEgzybO3mynw4BfozlvdQFOa5qmgda7FBQ==
   dependencies:
-    "@stencil/core" "^2.7.1"
+    "@stencil/core" "^2.12.0"
     tether "^2.0.0"
   optionalDependencies:
     react "^17.0.2"
@@ -436,10 +436,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@stencil/core@^2.7.1":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.10.0.tgz#acf44b9ae6578a20f0d09bf94296e833beadc885"
-  integrity sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A==
+"@stencil/core@^2.12.0":
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.12.1.tgz#92364d3e57337b8d36dd9b70cfbed2833929f22d"
+  integrity sha512-u24TZ+FEvjnZt5ZgIkLjLpUNsO6Ml3mUZqwmqk81w6RWWz75hgB5p4RFI5rvuErFeh2xvMIGo+pNdG24XUBz1A==
 
 "@types/fs-extra@^8.0.1":
   version "8.1.2"

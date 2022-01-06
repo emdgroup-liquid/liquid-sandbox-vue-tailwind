@@ -5,25 +5,23 @@ import './index.css'
 import { JSX as LocalJSX } from '@emdgroup-liquid/liquid/dist/loader'
 import { HTMLAttributes } from 'vue'
 
-import { setAssetPath } from '@emdgroup-liquid/liquid'
+import { setAssetPath } from '@emdgroup-liquid/liquid/dist/components'
 
-import {
-  LdBgCells,
-  LdButton,
-  LdCheckbox,
-  LdIcon,
-  LdInput,
-  LdInputMessage,
-  LdLabel,
-  LdNotification,
-  LdOption,
-  LdOptionInternal,
-  LdSelectPopper,
-  LdSelect,
-  LdTooltip,
-  LdTooltipPopper,
-  LdTypo,
-} from '@emdgroup-liquid/liquid/dist/custom-elements'
+import { LdBgCells } from '@emdgroup-liquid/liquid/dist/components/ld-bg-cells'
+import { LdButton } from '@emdgroup-liquid/liquid/dist/components/ld-button'
+import { LdCheckbox } from '@emdgroup-liquid/liquid/dist/components/ld-checkbox'
+import { LdIcon } from '@emdgroup-liquid/liquid/dist/components/ld-icon'
+import { LdInput } from '@emdgroup-liquid/liquid/dist/components/ld-input'
+import { LdInputMessage } from '@emdgroup-liquid/liquid/dist/components/ld-input-message'
+import { LdLabel } from '@emdgroup-liquid/liquid/dist/components/ld-label'
+import { LdNotification } from '@emdgroup-liquid/liquid/dist/components/ld-notification'
+import { LdOption } from '@emdgroup-liquid/liquid/dist/components/ld-option'
+import { LdOptionInternal } from '@emdgroup-liquid/liquid/dist/components/ld-option-internal'
+import { LdSelectPopper } from '@emdgroup-liquid/liquid/dist/components/ld-select-popper'
+import { LdSelect } from '@emdgroup-liquid/liquid/dist/components/ld-select'
+import { LdTooltip } from '@emdgroup-liquid/liquid/dist/components/ld-tooltip'
+import { LdTooltipPopper } from '@emdgroup-liquid/liquid/dist/components/ld-tooltip-popper'
+import { LdTypo } from '@emdgroup-liquid/liquid/dist/components/ld-typo'
 
 import '@emdgroup-liquid/liquid/dist/css/liquid.global.css'
 
