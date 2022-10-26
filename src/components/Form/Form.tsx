@@ -101,12 +101,6 @@ export default defineComponent({
           Hi there 👋
         </ld-typo>
 
-        <ld-input
-          placeholder="Your age in years"
-          type="number"
-          min="0"
-        ></ld-input>
-
         <ld-typo class="mb-ld-16">
           This small sandbox app demonstrates{' '}
           <a
@@ -124,7 +118,7 @@ export default defineComponent({
         <ld-label class="mb-ld-32 w-full">
           App Theme
           <ld-select
-            onChange={(ev: Event) =>
+            onLdchange={(ev: Event) =>
               this.onThemeChange((ev as CustomEvent).detail[0])
             }
             placeholder="Pick a theme"
@@ -186,7 +180,7 @@ export default defineComponent({
               onInput={(ev: Event) => {
                 this.fullName = (ev.target as HTMLInputElement).value
               }}
-              onBlur={(ev: Event) => {
+              onBlur={() => {
                 this.v$.fullName.$touch()
               }}
             ></ld-input>
@@ -217,7 +211,7 @@ export default defineComponent({
               onInput={(ev: Event) => {
                 this.email = (ev.target as HTMLInputElement).value
               }}
-              onBlur={(ev: Event) => {
+              onBlur={() => {
                 this.v$.email.$touch()
               }}
             ></ld-input>
@@ -248,7 +242,7 @@ export default defineComponent({
               onInput={(ev: Event) => {
                 this.website = (ev.target as HTMLInputElement).value
               }}
-              onBlur={(ev: Event) => {
+              onBlur={() => {
                 this.v$.website.$touch()
               }}
             ></ld-input>
@@ -298,7 +292,7 @@ export default defineComponent({
               onInput={() => {
                 this.termsAccepted = !this.termsAccepted
               }}
-              onBlur={(ev: Event) => {
+              onBlur={() => {
                 this.v$.termsAccepted.$touch()
               }}
               invalid={this.v$.termsAccepted.$error}
