@@ -1,6 +1,6 @@
-import { defineComponent } from 'vue'
-import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
+import Form from './components/Form/Form'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'App',

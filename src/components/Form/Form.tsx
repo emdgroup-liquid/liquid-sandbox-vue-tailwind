@@ -1,7 +1,7 @@
-import { defineComponent, PropType } from 'vue'
+import { titles } from './titles'
 import useVuelidate from '@vuelidate/core'
 import { email, helpers, required, url } from '@vuelidate/validators'
-import { titles } from './titles'
+import { defineComponent, PropType } from 'vue'
 
 export default defineComponent({
   name: 'Form',
@@ -100,6 +100,12 @@ export default defineComponent({
         <ld-typo variant="h2" class="mb-ld-32">
           Hi there 👋
         </ld-typo>
+
+        <ld-input
+          placeholder="Your age in years"
+          type="number"
+          min="0"
+        ></ld-input>
 
         <ld-typo class="mb-ld-16">
           This small sandbox app demonstrates{' '}

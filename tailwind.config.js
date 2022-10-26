@@ -1,4 +1,4 @@
-const liquidPreset = require('@emdgroup-liquid/liquid/dist/css/tailwind-preset.js')
+const liquidPreset = require('@emdgroup-liquid/liquid/dist/css/tailwind-preset.cjs')
 
 module.exports = {
   presets: [liquidPreset],
