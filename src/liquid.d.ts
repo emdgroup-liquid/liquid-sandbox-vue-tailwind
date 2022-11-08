@@ -1,5 +1,5 @@
-import { JSX as LocalJSX } from '@emdgroup-liquid/liquid'
-import { HTMLAttributes } from 'vue'
+import type { JSX as LocalJSX } from '@emdgroup-liquid/liquid'
+import type { HTMLAttributes } from 'vue'
 
 type LiquidElements<T> = {
   [P in keyof T]?: T[P] &
