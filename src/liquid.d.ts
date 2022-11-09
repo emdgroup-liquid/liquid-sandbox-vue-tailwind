@@ -14,4 +14,8 @@ declare global {
     interface IntrinsicElements
       extends LiquidElements<LocalJSX.IntrinsicElements> {}
   }
+
+  interface Window {
+    __LD_ASSET_PATH__?: string
+  }
 }
