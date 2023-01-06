@@ -1,5 +1,5 @@
 import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import { fileURLToPath, URL } from 'node:url'
 import copy from 'rollup-plugin-copy'
 import { defineConfig } from 'vite'
 
@@ -8,12 +8,9 @@ export default defineConfig({
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => tag.startsWith('ld-'),
+          isCustomElement: (tag: string) => tag.startsWith('ld-'),
         },
       },
-    }),
-    vueJsx({
-      isCustomElement: (tag) => tag.startsWith('ld-'),
     }),
     copy({
       targets: [
@@ -25,4 +22,9 @@ export default defineConfig({
       hook: 'buildStart',
     }),
   ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
 })
