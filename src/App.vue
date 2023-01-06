@@ -1,7 +1,11 @@
 <script lang="ts">
-import { LdTypo, LdBgCells, LdNotification } from '../../liquid/dist/vue'
 import FooterItem from './components/FooterItem/FooterItem.vue'
 import FormItem from './components/FormItem/FormItem.vue'
+import {
+  LdTypo,
+  LdBgCells,
+  LdNotification,
+} from '@emdgroup-liquid/liquid/dist/vue'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
