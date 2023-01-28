@@ -29,9 +29,6 @@ export default defineComponent({
   setup() {
     return { v$: useVuelidate() }
   },
-  props: {
-    onChangeTheme: Function as PropType<(theme: string) => void>,
-  },
   emits: {
     changeTheme(payload: string) {
       return payload
