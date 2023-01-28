@@ -12,7 +12,6 @@ import {
 } from '@emdgroup-liquid/liquid/dist/vue'
 import useVuelidate from '@vuelidate/core'
 import { email, helpers, required, url } from '@vuelidate/validators'
-import type { PropType } from 'vue'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
